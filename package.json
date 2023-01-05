@@ -1,0 +1,22 @@
+{
+  "name": "with-lighthouse-plugin",
+  "version": "1.0.0",
+  "description": "A site with lighhouse plugin installed to test web vitals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/with-lighthouse-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netlify/with-lighthouse-plugin/issues"
+  },
+  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme",
+  "devDependencies": {
+    "@netlify/plugin-lighthouse": "^4.0.1"
+  }
+}
