@@ -16,6 +16,8 @@ export const onSuccess = async ({ constants, utils, inputs } = {}) => {
     utils,
   });
 
+  console.log(process?.env)
+
   // Run onSuccess by default, unless we want to block deploys
   if (inputs?.thresholds_block_deploy) {
     return;
