@@ -16,7 +16,7 @@ export const onSuccess = async ({ constants, utils, inputs } = {}) => {
     utils,
   });
 
-  console.log(process.env.DEPLOY_PRIME_URL)
+  console.log('DEPLOY_PRIME_URL: ', process.env.DEPLOY_PRIME_URL)
 
   // Run onSuccess by default, unless we want to block deploys
   if (inputs?.thresholds_block_deploy) {

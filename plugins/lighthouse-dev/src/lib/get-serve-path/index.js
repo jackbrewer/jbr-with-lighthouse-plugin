@@ -3,24 +3,22 @@ import { join } from 'path';
 import chalk from 'chalk';
 
 const getServePath = (dir, subDir) => {
-  return process.env.DEPLOY_PRIME_URL || '';
+  if (typeof subDir !== 'string' || typeof dir !== 'string') {
+    return { serveDir: undefined };
+  }
 
-  // if (typeof subDir !== 'string' || typeof dir !== 'string') {
-  //   return { serveDir: undefined };
-  // }
+  const resolvedPath = join(dir, subDir);
+  if (!resolvedPath.startsWith(dir)) {
+    throw new Error(
+      chalk.red(
+        `resolved path for ${chalk.red(
+          subDir,
+        )} is outside publish directory ${chalk.red(dir)}`,
+      ),
+    );
+  }
 
-  // const resolvedPath = join(dir, subDir);
-  // if (!resolvedPath.startsWith(dir)) {
-  //   throw new Error(
-  //     chalk.red(
-  //       `resolved path for ${chalk.red(
-  //         subDir,
-  //       )} is outside publish directory ${chalk.red(dir)}`,
-  //     ),
-  //   );
-  // }
-
-  // return { serveDir: resolvedPath };
+  return { serveDir: resolvedPath };
 };
 
 export default getServePath;

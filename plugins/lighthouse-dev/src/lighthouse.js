@@ -36,7 +36,7 @@ export const runLighthouse = async (browserPath, url, settings) => {
     const logLevel = 'info';
     log.setLevel(logLevel);
     chrome = await chromeLauncher.launch({
-      chromePath: browserPath,
+      chromePath:  `${process.env.DEPLOY_PRIME_URL}/${browserPath}`,
       chromeFlags: [
         '--headless',
         '--no-sandbox',
