@@ -16,15 +16,12 @@ export const onSuccess = async ({ constants, utils, inputs } = {}) => {
     utils,
   });
 
-  console.log(process?.env)
+  console.log(process.env.DEPLOY_PRIME_URL)
 
   // Run onSuccess by default, unless we want to block deploys
   if (inputs?.thresholds_block_deploy) {
     return;
   }
-
-  const targetUrl = process.ENV.DEPLOY_PRIME_URL || '';
-  console.log({targetUrl})
 
   const { failPlugin, show } = getUtils({ utils });
   let errorMetadata = [];
