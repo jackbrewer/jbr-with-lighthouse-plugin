@@ -3,7 +3,7 @@ import { join } from 'path';
 import chalk from 'chalk';
 
 const getServePath = (dir, subDir) => {
-  return process.ENV.DEPLOY_PRIME_URL || '';
+  return process.env.DEPLOY_PRIME_URL || '';
 
   // if (typeof subDir !== 'string' || typeof dir !== 'string') {
   //   return { serveDir: undefined };
