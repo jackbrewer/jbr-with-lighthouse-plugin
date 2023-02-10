@@ -1,5 +1,5 @@
 [[plugins]]
-  package = "/plugins/lighthouse-dev"
+  package = "/plugins/lighthouse-dev/src/"
 
   [plugins.inputs.thresholds]
     performance = 0.9
