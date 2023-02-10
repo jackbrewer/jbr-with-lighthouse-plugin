@@ -21,6 +21,9 @@ export const onSuccess = async ({ constants, utils, inputs } = {}) => {
     return;
   }
 
+  const targetUrl = process.ENV.DEPLOY_PRIME_URL || '';
+  console.log({targetUrl})
+
   const { failPlugin, show } = getUtils({ utils });
   let errorMetadata = [];
 
