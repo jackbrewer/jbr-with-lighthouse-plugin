@@ -1,5 +1,5 @@
 [[plugins]]
-  package = "@netlify/plugin-lighthouse"
+  package = "/plugins/lighthouse-dev"
 
   [plugins.inputs.thresholds]
     performance = 0.9

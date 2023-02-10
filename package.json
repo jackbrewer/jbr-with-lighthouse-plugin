@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/netlify/with-lighthouse-plugin/issues"
   },
-  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme",
-  "devDependencies": {
-    "@netlify/plugin-lighthouse": "^4.0.1"
-  }
+  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme"
 }
