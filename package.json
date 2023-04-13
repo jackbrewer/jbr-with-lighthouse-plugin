@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/netlify/with-lighthouse-plugin/issues"
   },
-  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme",
-  "dependencies": {
-    "@netlify/plugin-lighthouse": "netlify/netlify-plugin-lighthouse#sa/chore/renameRunOnSuccessEnvVar"
-  }
+  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme"
 }
