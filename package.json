@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme",
   "dependencies": {
-    "@netlify/plugin-lighthouse": "^4.0.7"
+    "@netlify/plugin-lighthouse": "netlify/netlify-plugin-lighthouse#sa/chore/renameRunOnSuccessEnvVar"
   }
 }

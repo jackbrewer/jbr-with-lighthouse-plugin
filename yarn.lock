@@ -2,10 +2,9 @@
 # yarn lockfile v1
 
 
-"@netlify/plugin-lighthouse@^4.0.7":
+"@netlify/plugin-lighthouse@netlify/netlify-plugin-lighthouse#sa/chore/renameRunOnSuccessEnvVar":
   version "4.0.7"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-lighthouse/-/plugin-lighthouse-4.0.7.tgz#c4a3f966cbb71f167e9b004e0ef1672afedcd5f9"
-  integrity sha512-J9oPEJ3/7KcWDGaHuxngSYzyiVR21DKEJ8AmfZs/G2nzG+4fXpLpWsJT/SyKj+tgD8DUxNjffZlCcZZPxIu6Vg==
+  resolved "https://codeload.github.com/netlify/netlify-plugin-lighthouse/tar.gz/48830d985c7bc5430db3eb463bb81575c9dc8c01"
   dependencies:
     chalk "^4.1.0"
     chrome-launcher "^0.15.0"
