@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/netlify/with-lighthouse-plugin/issues"
   },
-  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme"
+  "homepage": "https://github.com/netlify/with-lighthouse-plugin#readme",
+  "dependencies": {
+    "@netlify/plugin-lighthouse": "github:netlify/netlify-plugin-lighthouse#sa/chore/revertCypress"
+  }
 }
